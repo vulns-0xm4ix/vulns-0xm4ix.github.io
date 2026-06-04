@@ -39,6 +39,7 @@ const sidebars = {
           ],
         },
         { type: "doc", id: "linux", label: "Linux" },
+        { type: "doc", id: "windows", label: "Windows" },
         { type: "doc", id: "footholds", label: "Footholds" },
         { type: "doc", id: "methodology", label: "Methodology" },
       ],

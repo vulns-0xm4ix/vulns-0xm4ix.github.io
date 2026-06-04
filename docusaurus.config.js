@@ -4,7 +4,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "0xM4IX",
   tagline: "Security Research & Notes",
-  favicon: "img/favicon-32x32.png",
+  favicon: "img/favicon.ico",
 
   future: {
     v4: true,
@@ -12,8 +12,9 @@ const config = {
 
   url: "https://vulns-0xm4ix.github.io",
   baseUrl: "/",
+
   organizationName: "vulns-0xm4ix",
-  projectName: "0xm4ix-docs",
+  projectName: "vulns-0xm4ix.github.io",
 
   onBrokenLinks: "throw",
 
@@ -21,6 +22,7 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+
   plugins: [
     [
       "@easyops-cn/docusaurus-search-local",
@@ -55,8 +57,15 @@ const config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+
     navbar: {
       title: "0xM4IX",
+
+      logo: {
+        alt: "0xM4IX",
+        src: "img/doppi.svg",
+      },
+
       items: [
         {
           to: "/active-directory",
@@ -74,26 +83,29 @@ const config = {
           position: "left",
         },
         {
-          type: "search",
-          position: "right",
-        },
-        {
           href: "https://0xm4ix.github.io",
-          label: "Writeups ",
+          label: "Writeups",
           position: "left",
           target: "_blank",
         },
+        {
+          type: "search",
+          position: "right",
+        },
       ],
     },
+
     docs: {
       sidebar: {
         hideable: false,
         autoCollapseCategories: false,
       },
     },
+
     footer: {
       copyright: " ",
     },
+
     prism: {
       theme: prismThemes.dracula,
       darkTheme: prismThemes.dracula,
