@@ -60,12 +60,6 @@ const config = {
 
     navbar: {
       title: "0xM4IX",
-
-      logo: {
-        alt: "0xM4IX",
-        src: "img/doppi.svg",
-      },
-
       items: [
         {
           to: "/active-directory",
